@@ -21,7 +21,7 @@ function Footer() {
 
         {/* Thank you text */}
         <div>
-          <h4 className="text-sm md:text-base">Thank you</h4>
+          <h4 className="text-sm md:text-base">made with ♡ by oreki</h4>
         </div>
       </div>
     </footer>

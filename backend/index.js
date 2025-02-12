@@ -16,7 +16,7 @@ cloudinary.config({
   api_secret: 'DQlHQorlCd2r-JhxRn-hPgeSIgc' 
 });
 
-mongoose.connect("mongodb+srv://oreki:orekiftw@cluster0.cvktl.mongodb.net/StoreUrls")
+mongoose.connect("mongodb+srv://oreki:orekiftw@cluster0.cvktl.mongodb.net/walls-collection")
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error('MongoDB connection error:', err))
 

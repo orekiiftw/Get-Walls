@@ -12,7 +12,7 @@ function MainSection() {
   const fetchData = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:3000/walls`);
+      const response = await axios.get(`https://getwalls.osc-fr1.scalingo.io/walls`);
       setData(response.data);
     } catch (error) {
       console.error("Error fetching data:", error);

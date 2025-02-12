@@ -4,6 +4,7 @@ import { message } from 'telegraf/filters'
 import { v2 as cloudinary } from 'cloudinary';
 import path from "path"
 import fs from "fs"
+import cors from "cors"
 import axios from "axios"
 import mongoose from 'mongoose';
 import Image from './models.js';
@@ -23,6 +24,7 @@ mongoose.connect("mongodb+srv://oreki:orekiftw@cluster0.cvktl.mongodb.net/StoreU
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 
 app.use("/", router)
 

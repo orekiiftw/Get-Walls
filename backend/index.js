@@ -8,7 +8,7 @@ import axios from "axios"
 import mongoose from 'mongoose';
 import Image from './models.js';
 import router from './routes.js';
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 cloudinary.config({ 
   cloud_name: 'dlga0brem', 
   api_key: '214639394316956', 

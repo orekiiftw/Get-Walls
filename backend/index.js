@@ -28,7 +28,7 @@ app.use(cors())
 
 app.use("/", router)
 
-const bot = new Telegraf("7723870844:AAGH5krmjaCmmG9crL7-oe_RYDl4G010e1w")
+const bot = new Telegraf("8184121274:AAE8aTcPqgvrqmqhmLz_crBBBtMEtyvX1TU")
 bot.on(message("document"), async (ctx) => {
   try {
     const document = ctx.message.document;

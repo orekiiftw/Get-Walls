@@ -33,10 +33,8 @@ function MainSection() {
   const getSpanClasses = (wall) => {
     const aspectRatio = wall.width / wall.height;
     if (wall.type === 'desktop') {
-      
       return aspectRatio > 1 ? 'col-span-1 row-span-2' : 'col-span-2 row-span-1';
     } else {
-      
       return aspectRatio > 1.5 ? 'col-span-2 row-span-1' : 'col-span-1 row-span-2';
     }
   };
@@ -79,7 +77,7 @@ function MainSection() {
           dataLength={data?.response.length || 0}
           loader={<h4>Loading...</h4>}
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 auto-rows-[150px] sm:auto-rows-[180px] md:auto-rows-[250px] gap-4"> {/* Reduced gap */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 auto-rows-[150px] sm:auto-rows-[180px] md:auto-rows-[250px] gap-4">
             {(activeTab === 'all' ? allWalls : activeTab === 'desktop' ? desktopWalls : mobileWalls).map((wall, index) => (
               <div key={index} className={`relative rounded-xl overflow-hidden group ${getSpanClasses(wall)}`}>
                 <img
